@@ -1,0 +1,100 @@
+/* Fundo preto com texto vermelho para dar clima */
+body {
+    background-color: #000000;
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    animation: flicker 3s infinite;
+}
+
+/* Animação de flicker (piscar de luz) para todo o body */
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Centralizar o header */
+header {
+    background-color: #330000;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff0000;
+}
+
+/* O título maior */
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 5px #550000;
+    transition: color 0.5s ease;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Seção de história assustadora */
+.scary-section {
+    border: 2px solid #ff0000;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #110000;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+/* Seção da imagem sombria */
+.image-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Imagem responsiva e com sombra vermelha */
+.image-section img {
+    max-width: 80%;
+    height: auto;
+    border: 5px solid #ff0000;
+    box-shadow: 0 0 20px #ff0000;
+    filter: grayscale(70%);
+}
+
+/* Botão e mensagem na seção interativa */
+.interactive-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+button {
+    background-color: #330000;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0000;
+    color: #330000;
+}
+
+#scary-msg {
+    margin-top: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Rodapé fixo */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #330000;
+    border-top: 2px solid #ff0000;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Site de Terror</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1 id="main-title">Bem-vindo ao Mundo do Terror</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <p>Você está prestes a entrar em um lugar sombrio...</p>
+        </section>
+
+        <!-- Imagem sombria -->
+        <section class="image-section">
+            <img src="casa-abandonada.jpg" alt="Casa abandonada" />
+        </section>
+
+        <!-- História assustadora -->
+        <section class="scary-section">
+            <h2>História Assustadora</h2>
+            <p>Era uma noite fria e escura quando você ouviu passos atrás de si...</p>
+        </section>
+
+        <!-- Botão pra mensagem assustadora -->
+        <section class="interactive-section">
+            <button id="scary-btn">Clique para ver a mensagem assustadora</button>
+            <p id="scary-msg"></p>
+        </section>
+
+        <!-- Som de terror -->
+        <audio id="scary-sound" src="som-terror.mp3" preload="auto"></audio>
+        <audio id="scary-sound" src="som-terror.mp3" autoplay></audio>
+    </main>
+    <footer>
+        <p>© 2025 Site de Terror. Cuidado onde pisa!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
